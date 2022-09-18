@@ -1,0 +1,444 @@
+@import url(https://fonts.googleapis.com/css?family=Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+html,
+body {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.box {
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #fff;
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  line-height: 26px;
+  font-size: 16px;
+  color: #7B8BAD;
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 196px;
+  padding: 55px 0 83px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  height: 40px;
+}
+.header__btn {
+  background-color: #E8EFF2;
+  color: #162542;
+  transition: all 1s;
+}
+.header__btn:hover {
+  background-color: #162542;
+  color: #fff;
+}
+
+.btn {
+  width: 175px;
+  height: 58px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.main .order {
+  position: relative;
+}
+.main .order__inner {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main .order__inner-content {
+  max-width: 570px;
+  padding: 60px 125px 0 0;
+}
+.main .order__inner-content .content__title {
+  font-weight: 900;
+  font-size: 56px;
+  line-height: 56px;
+  color: #162542;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+.main .order__inner-content .content__text {
+  font-style: 18px;
+  margin-bottom: 40px;
+}
+.main .order__inner-content .content__addinfo {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.main .order__btn {
+  background-color: #F16718;
+  color: #fff;
+  display: inline-flex;
+  margin-right: 40px;
+  transition: all 1s;
+}
+.main .order__btn:hover {
+  background-color: #FF9B62;
+  color: #fff;
+}
+.main .order__inner-bgimg {
+  width: 540px;
+  height: 480px;
+  background-image: url(../images/desktop/image-keyboard.jpg);
+  background-size: cover;
+  background-color: #E8EFF2;
+  border-radius: 20px;
+}
+.main .order__inner-bgcolor {
+  width: 136px;
+  height: 240px;
+  background-color: #E8EFF2;
+  border-radius: 20px 0 0 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.main .mech {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
+}
+.main .mech__inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main .mech__inner-bgcolor {
+  width: 136px;
+  height: 240px;
+  background-color: #E8EFF2;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  bottom: 30px;
+  left: 0px;
+}
+.main .mech__inner-bgimgph {
+  width: 255px;
+  height: 480px;
+  background-image: url(../images/desktop/image-phone-and-keyboard.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+.main .mech__inner-bgimgph .blend-orange {
+  height: inherit;
+  background-color: rgba(255, 111, 0, 0.99);
+  mix-blend-mode: multiply;
+  border-radius: inherit;
+}
+.main .mech__inner-bgimggl {
+  width: 445px;
+  height: 480px;
+  background-image: url(../images/desktop/image-glass-and-keyboard.jpg);
+  background-size: cover;
+  border-radius: 20px;
+}
+.main .mech__inner-content {
+  width: 350px;
+  padding: 112px 0 103px 95px;
+}
+.main .mech__inner-content .content__title {
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #162542;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.main .set {
+  padding-bottom: 32px;
+  padding-top: 130px;
+}
+.main .set__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.main .set__inner-item {
+  width: 255px;
+}
+.main .set__inner-item .item__bgimg {
+  width: 65px;
+  height: 65px;
+  -moz-column-break-before: 16px;
+       break-before: 16px;
+  background-color: #F16718;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.main .set__inner-item .item__title {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #162542;
+}
+.main .footer {
+  height: 97px;
+  padding-top: 32px;
+  padding-bottom: 37px;
+}
+.main .footer__content {
+  text-align: center;
+}
+.main .footer__content span {
+  font-weight: 700;
+}
+
+@media (max-width: 1150px) {
+  .box {
+    width: 900px;
+  }
+  .order__inner-bgcolor {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  .box {
+    width: 768px;
+  }
+  .container {
+    max-width: 680px;
+  }
+  .header {
+    height: 160px;
+    padding: 40px 0 63px;
+  }
+  .header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .order__inner-content {
+    max-width: 407px;
+    padding: 60px 0 0 0;
+  }
+  .main .order__inner-content .content__title {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 34px;
+  }
+  .main .order__inner-content .content__text {
+    font-size: 16px;
+    margin-bottom: 39px;
+    width: 339px;
+  }
+  .main .order__inner-content .content__addinfo {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .main .order__btn {
+    margin-right: 37px;
+  }
+  .main .order__inner-bgimg {
+    width: 321px;
+    height: 425px;
+    background-image: url(../images/tablet/image-keyboard.jpg);
+    border-radius: 20px 0 0 20px;
+    position: relative;
+    right: -40px;
+    top: 0;
+  }
+  .main .order__inner-bgcolor {
+    display: none;
+  }
+  .main .mech {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .main .mech__inner-bgcolor {
+    display: none;
+  }
+  .main .mech__inner-bgimgph {
+    width: 214px;
+    height: 320px;
+    background-image: url(../images/tablet/image-glass-and-keyboard.jpg);
+  }
+  .main .mech__inner-bgimggl {
+    width: 445px;
+    height: 320px;
+    background-image: url(../images/tablet/image-phone-and-keyboard.jpg);
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .main .mech__inner-content {
+    width: 688px;
+    padding: 77px 0 103px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .main .mech__inner-content .content__title {
+    width: 255px;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 36px;
+    color: #162542;
+    text-transform: uppercase;
+  }
+  .main .mech__inner-content .content__text {
+    width: 398px;
+  }
+  .main .set {
+    padding-bottom: 32px;
+    padding-top: 20px;
+  }
+  .main .set__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .main .set__inner-item {
+    width: 255px;
+    margin-bottom: 25px;
+  }
+  .main .set__inner-item .item__bgimg {
+    width: 65px;
+    height: 65px;
+    -moz-column-break-before: 16px;
+         break-before: 16px;
+    background-color: #F16718;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  .main .set__inner-item .item__title {
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #162542;
+  }
+  .main .footer {
+    padding-top: 28px;
+    padding-bottom: 45px;
+  }
+}
+@media (max-width: 420px) {
+  .box {
+    max-width: 375px;
+  }
+  .container {
+    max-width: 327px;
+    margin: 0 auto;
+  }
+  .header {
+    height: auto;
+    padding: 23px 0 62px;
+  }
+  .btn {
+    width: 151px;
+    height: 48px;
+  }
+  .main .order__inner-content {
+    max-width: 327px;
+    padding: 0 0 0 0;
+  }
+  .main .order__inner-content .content__title {
+    margin-bottom: 32px;
+  }
+  .main .order__inner-content .content__text {
+    margin-bottom: 32px;
+    width: auto;
+  }
+  .main .order__inner-content .content__addinfo {
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .main .order__btn {
+    margin-right: 32px;
+    margin-bottom: 64px;
+  }
+  .main .order__inner-bgimg {
+    width: 351px;
+    height: 331px;
+    background-image: url(../images/mobile/image-keyboard.jpg);
+    border-radius: 20px 0 0 20px;
+    right: 0;
+    left: 24px;
+  }
+  .main .order__inner-bgcolor {
+    display: none;
+  }
+  .main .mech {
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+  .main .mech__inner-bgimgph {
+    width: 107px;
+    height: 193px;
+    background-image: url(../images/mobile/image-phone-and-keyboard.jpg);
+    margin-bottom: 75px;
+    position: relative;
+    border-radius: 0 20px 20px 0;
+    top: 0;
+    left: -22px;
+  }
+  .main .mech__inner-bgimggl {
+    width: 220px;
+    height: 193px;
+    background-image: url(../images/mobile/image-glass-and-keyboard.jpg);
+    background-size: cover;
+    margin-bottom: 75px;
+  }
+  .main .mech__inner-content {
+    width: 327px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 75px;
+  }
+  .main .mech__inner-content .content__title {
+    width: 255px;
+    margin-bottom: 24px;
+  }
+  .main .mech__inner-content .content__text {
+    width: 100%;
+    justify-content: space-between;
+  }
+  .main .set {
+    padding-bottom: 0;
+    padding-top: 20px;
+  }
+  .main .set__inner-item {
+    width: 100%;
+    margin-bottom: 62px;
+    text-align: center;
+  }
+  .main .set__inner-item .item__bgimg {
+    margin: 0 auto 48px;
+  }
+  .main .footer {
+    padding-top: 32px;
+    padding-bottom: 50px;
+  }
+}/*# sourceMappingURL=style.css.map */
